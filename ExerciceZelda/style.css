@@ -1,0 +1,109 @@
+/*@keyframe playX {
+  from { background-position-x: 0px;}
+  to {background-position-x: 300px;}
+}*/
+body{
+
+}
+.image{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  height: 130px;
+  background-image: url(zelda.png);
+  background-position: top left;
+
+}
+
+.sleepyf:checked ~ .image{
+  animation: play 3s steps(3) 2;
+  animation-fill-mode: both;
+  animation-name: play1;
+}
+@keyframes play1 {
+   from { background-position: 0px 0px; }
+   to { background-position: -360px 0px; }
+}
+@@keyframes play1 {
+  from { background-position: -360px 0px; }
+  to { background-position: 0px 0px; }
+}
+.sleepyl:checked ~ div.image{
+  animation: play 3s steps(3) 2;
+  animation-fill-mode: both;
+  animation-name: play2;
+}
+@keyframes play2 {
+   from { background-position:    0px -130px; }
+   to { background-position: -360px -130px; }
+}
+.hit:checked ~ div.image{
+
+}
+
+.walkf:checked ~ div.image{
+  animation: play 3s steps(10) 2;
+  animation-fill-mode: forwards;
+  animation-name: play3;
+}
+@keyframes play3 {
+   from { background-position: 0px -525px; }
+   to { background-position: -1200px -525px; }
+}
+.walkl:checked ~ div.image{
+  animation: play 3s steps(10) 2;
+  animation-fill-mode: forwards;
+  animation-name: play4;
+}
+@keyframes play4 {
+   from { background-position: -1200px -650px; }
+   to { background-position: 0px -650px; }
+}
+.walkb:checked ~ div.image{
+  animation: play 3s steps(10) 2;
+  animation-fill-mode: forwards;
+  animation-name: play5;
+}
+@keyframes play5 {
+   from { background-position: 0px -780px; }
+   to { background-position: -1200px -780px; }
+}
+.walkr:checked ~ div.image{
+  animation: play 3s steps(10) 2;
+  animation-fill-mode: forwards;
+  animation-name: play6;
+}
+@keyframes play6 {
+   from { background-position: 0px -910px; }
+   to { background-position: -1200px -910px; }
+}
+.run:checked ~ div.image{
+  animation: play 1s steps(10) 3;
+  animation-fill-mode: forwards;
+  animation-name: play7;
+}
+@keyframes play7 {
+   from { background-position: 0px -910px; }
+   to { background-position: -1200px -910px; }
+
+/*   116x140    */
+/*   348x140    */
+
+}
+.image2{
+  margin-top: 20%;
+  width: 60px;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(personne.png);
+  background-size: cover;
+  background-position: left;
+  animation: play 3s steps(8) infinite;
+  animation-name: play10
+}
+@@keyframes play10 {
+  from { background-position: 0px 0px}
+  to {background-position: -2037px 0px}
+}
