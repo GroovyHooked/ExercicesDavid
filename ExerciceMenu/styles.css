@@ -5,35 +5,68 @@ a:link {
   text-decoration: none;
 }
 div.menu {
+  height: 64px;
   width: 60%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-color: lightblue;
 }
-
+.bordure{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    border-bottom: 4px solid #457b9d;
+}
 a {
-
   width: 100px;
   margin-left: 15px;
   margin-right: 15px;
   line-height: 4;
+  color: black;
 }
-
-div.ssmenu:hover {
-  background-color: blue;
-  border-bottom: 4px solid black;
-  margin-bottom: -4px;
+.ssmenu{
+    transition: 2s background-color;
 }
-
 .ssmenu:hover {
-  color: white;
+  background-color: #0096c7;
 }
-
-a:hover {
-  color: white;
+a:focus-within{
+  color:white;
 }
-:focus {
-  outline : 2px solid black;
+.ssmenu:focus-within{
+  background-color: blue;
+  color:white;
+}
+.ssmenu1:focus-within ~ div.bordure{
+  transform: translateX(0px);
+}
+.ssmenu2:focus-within ~ div.bordure{
+  transform: translateX(100%);
+}
+.ssmenu3:focus-within ~ div.bordure{
+  transform: translateX(200%);
+}
+.ssmenu4:focus-within ~ div.bordure{
+  transform: translateX(300%);
+}
+.ssmenu1:hover ~ div.bordure{
+  transition: 1s;
+  transform: translateX(0%);
+}
+.ssmenu2:hover ~ div.bordure{
+  transition: 1s;
+  transform: translateX(100%);
+}
+.ssmenu3:hover ~ div.bordure{
+  transition: 1s;
+  transform: translateX(200%);
+}
+.ssmenu4:hover ~ div.bordure{
+  transition: 1s;
+  transform: translateX(300%);
 }
